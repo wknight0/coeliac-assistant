@@ -1,6 +1,6 @@
 # coeliac-assistant
 Currently in early stages of development but the plan is to have two different components of the project.
-- `web-server`
+- `ca-server`
     - Intended to be hosted / run on a standalone PC or server to handle processing images/information via REST API and return output. For example, using `POST` request on an image of a product's ingredient list and name should check for any potential gluten containing ingredients, and also check with the manufacturer to ensure that there is no risk of cross contamination. This could also involve reaching out to the manufacturer, and if looking for safe cafes/restaurants and other places, should be able to handle additional research/investigation.
-- `web-mobile-application`
-    - Intended to be a frontend React native web application to be used on a mobile device to upload images and view information retrieved from using the above `web-server's REST API. Should include proper protections and security to ensure that can only be used by the individual hosting it. Should contain multiple views depending on the scope of the project. At the minimum, should be able to upload and view information about food products, and additional implements could include map view / confirmations for restaurants, cafes, etc. 
+- `ca-frontend`
+    - Intended to be a frontend Expo web application using Node.js to be used on a mobile device (or other device) to upload images and view information retrieved from using the above `web-server's REST API. Should include proper protections and security to ensure that can only be used by the individual hosting it. Should contain multiple views depending on the scope of the project. At the minimum, should be able to upload and view information about food products, and additional implements could include map view / confirmations for restaurants, cafes, etc. 
