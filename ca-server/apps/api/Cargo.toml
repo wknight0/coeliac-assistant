@@ -11,4 +11,4 @@ serde_json = "1.0"
 tower-http = { version = "0.5", features = ["cors", "trace"] }
 tracing-subscriber = "0.3"
 ai_client = { path = "../../libs/ai_client" }
-scraper_lib = { path = "../../libs/scraper" }
+scraper_lib = { package = "scraper", path = "../../libs/scraper" }
